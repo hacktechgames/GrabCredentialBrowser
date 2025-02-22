@@ -1,6 +1,3 @@
-# GrabCredentialBrowser
-A badusb script for flipper zero
-------------------------------------------------------------------------------------------------------------------------
 ## Avvertenze
 
 - **Utilizza questo script solo su dispositivi di cui sei il proprietario o per cui hai ottenuto il consenso esplicito**.
@@ -51,10 +48,9 @@ Questo script è progettato per estrarre i dati di accesso (credenziali, cookie,
    - Dopo l'esecuzione, il file `BrowserData.zip` sarà salvato nella radice della penna USB.
    - Apri il file ZIP per accedere ai dati estratti.
 
-
 ## Come leggere i dati estratti
 
-I file estratti sono in formato SQLite o JSON. Per leggerli, segui queste istruzioni:
+I file estratti sono in formato SQLite o JSON.
 
 
 
