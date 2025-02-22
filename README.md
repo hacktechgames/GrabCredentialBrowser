@@ -17,8 +17,6 @@ Questo script è rilasciato sotto licenza MIT. Consulta il file [LICENSE](LICENS
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-
-
 # Script per l'estrazione dei dati dei browser
 
 Questo script è progettato per estrarre i dati di accesso (credenziali, cookie, ecc.) dai browser Chrome, Firefox e Edge e salvarli su una penna USB con label **penusb**. I dati vengono salvati in un file ZIP chiamato `BrowserData.zip`.
@@ -53,31 +51,10 @@ Questo script è progettato per estrarre i dati di accesso (credenziali, cookie,
    - Dopo l'esecuzione, il file `BrowserData.zip` sarà salvato nella radice della penna USB.
    - Apri il file ZIP per accedere ai dati estratti.
 
-## Struttura del file ZIP
-
-Il file `BrowserData.zip` contiene i seguenti file:
-- `ChromeLoginData`: Dati di accesso di Google Chrome.
-- `FirefoxData`: Dati di accesso di Mozilla Firefox.
-- `EdgeLoginData`: Dati di accesso di Microsoft Edge.
 
 ## Come leggere i dati estratti
 
 I file estratti sono in formato SQLite o JSON. Per leggerli, segui queste istruzioni:
 
-### Chrome e Edge
-1. Usa **DB Browser for SQLite** ([https://sqlitebrowser.org/](https://sqlitebrowser.org/)) per aprire i file `ChromeLoginData` e `EdgeLoginData`.
-2. Cerca la tabella `logins` per visualizzare le credenziali salvate.
-3. Le password sono crittografate. Per decrittografarle, utilizza la chiave di crittografia di Chrome/Edge:
-   - Trova la chiave in:
-     ```
-     %LocalAppData%\Google\Chrome\User Data\Local State
-     ```
-     o
-     ```
-     %LocalAppData%\Microsoft\Edge\User Data\Local State
-     ```
 
-### Firefox
-1. Usa **Firefox Decrypt** ([https://github.com/unode/firefox_decrypt](https://github.com/unode/firefox_decrypt)) per estrarre le credenziali dai file `FirefoxData`.
-2. Le password sono crittografate. Lo script le decrittograferà automaticamente.
 
